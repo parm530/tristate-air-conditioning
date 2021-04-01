@@ -14,6 +14,10 @@ body a:active, body a:focus, body a:hover {
     text-decoration: none;
 } 
 
+.navbar-custom {
+    background-color: #FDFCFA;
+}
+
 #main-carousel .carousel-item {
     height: 500px;
 }
@@ -31,7 +35,7 @@ body a:active, body a:focus, body a:hover {
 .projects-carousel__caption {
     background-color: #000;
     height: 100%;
-    color: #fff;
+    color: #FFF;
     padding: 15px;
 }
 .projects-carousel__indicators {
@@ -58,12 +62,12 @@ body a:active, body a:focus, body a:hover {
     margin-right: -15px;
 }
 
-.main-content__summary-1 {
-    background-color: #FDF9F0;
+.company-statement__row {
+    background-color: #FDFCFA;
 }
 
 .statistics {
-    background-color: #FDF9F0;
+    background-color: #FDFCFA;
     min-height: 340px;
 }
 .statistics_img {
@@ -95,7 +99,7 @@ body a:active, body a:focus, body a:hover {
 }
 
 @media(min-width: 996px) {
-    header.header, .row.main-content__row,
+    header.header, .row.company-statement__row,
     .row.statistics__row, .row.footer_links {
         width: 990px;
         margin: 0 auto;
@@ -103,7 +107,7 @@ body a:active, body a:focus, body a:hover {
 }
 
 @media(min-width: 1200px) {
-    header.header, .row.main-content__row,
+    header.header, .row.company-statement__row,
     .row.statistics__row, .row.footer__links {
         width: 1120px;
         margin: 0 auto;
