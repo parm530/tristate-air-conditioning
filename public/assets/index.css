@@ -1,0 +1,118 @@
+body {
+    background-color: #FDFCFA;
+    color: #333;
+    font-family: 'Monda', sans-serif;
+}
+
+body a {
+    color: #FDFCFA;
+    text-decoration: none;
+}
+
+body a:active, body a:focus, body a:hover {
+    color: #F5C368;
+    text-decoration: none;
+} 
+
+.navbar-custom {
+    background-color: #FDFCFA;
+}
+
+#main-carousel .carousel-item {
+    height: 500px;
+}
+
+.projects {
+    background-color: #333;
+    color: #FDFCFA;
+}
+.projects-carousel__img-col {
+    padding-right: 0;
+}
+.projects-carousel__text-col {
+    padding-left: 0;
+}
+.projects-carousel__caption {
+    background-color: #000;
+    height: 100%;
+    color: #FFF;
+    padding: 15px;
+}
+.projects-carousel__indicators {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-evenly;
+}
+.projects-carousel__indicators span { 
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.projects-carousel__indicators span.active { 
+    border: 1px solid #FDF9F0;
+}
+
+.center-header {
+    text-align: center;
+}
+
+.rem-margins {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.company-statement__row {
+    background-color: #FDFCFA;
+}
+
+.statistics {
+    background-color: #FDFCFA;
+    min-height: 340px;
+}
+.statistics_img {
+    height: 80px;
+    width: 80px;
+}
+.statistics__container {
+    justify-content: space-around;
+}
+
+.element-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.footer {
+    background-color: #333333;
+    color: #FDFCFA;
+    font-size: 14px;
+}
+.footer__copyright {
+    background-color: #000;
+}
+.footer__list {
+    padding-left: 0;
+}
+.footer__list-item {
+    list-style: none;
+}
+
+@media(min-width: 996px) {
+    header.header, .row.company-statement__row,
+    .row.statistics__row, .row.footer_links {
+        width: 990px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 1200px) {
+    header.header, .row.company-statement__row,
+    .row.statistics__row, .row.footer__links {
+        width: 1120px;
+        margin: 0 auto;
+    }
+}
+
+
+
