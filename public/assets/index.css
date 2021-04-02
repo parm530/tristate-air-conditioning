@@ -14,12 +14,12 @@ body a:active, body a:focus, body a:hover {
     text-decoration: none;
 } 
 
-.navbar-custom {
-    background-color: #FDFCFA;
+.header__brand-title {
+    font-size: 0.8em;
 }
 
-#main-carousel .carousel-item {
-    height: 500px;
+.navbar-custom {
+    background-color: #FDFCFA;
 }
 
 .projects {
@@ -75,7 +75,7 @@ body a:active, body a:focus, body a:hover {
     width: 80px;
 }
 .statistics__container {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .element-fluid {
@@ -98,11 +98,31 @@ body a:active, body a:focus, body a:hover {
     list-style: none;
 }
 
+.footer__brand-title {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+@media(min-width: 576px) {
+    .footer__company {
+        justify-content: flex-start !important;
+    }
+    .footer__links {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
+
 @media(min-width: 996px) {
     header.header, .row.company-statement__row,
     .row.statistics__row, .row.footer_links {
         width: 990px;
         margin: 0 auto;
+    }
+
+
+    #main-carousel .carousel-item {
+        max-height: 500px;
     }
 }
 

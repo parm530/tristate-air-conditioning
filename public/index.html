@@ -16,16 +16,16 @@
 <body>
 	<header class='header container-fluid'>
 		<nav class="navbar navbar-expand-lg navbar-light row navbar-custom">
-			<div class='col-7'>
-				<a class="navbar-brand" href="#">
+			<div class='col-10 col-lg-7'>
+				<a class="navbar-brand d-flex flex-row" href="#">
 					<img src="./assets/images/tristate-logo.svg" width="100" height="60" alt="tristate-ac-logo">
-					Tristate Air Conditioning	
+					<p class="header__brand-title">Tristate<br />Air Conditioning</p>	
 				</a>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse justify-content-end col-5" id="navbarNav">
+			<div class="collapse navbar-collapse justify-content-end col-lg-5" id="navbarNav">
 				<ul class="navbar-nav">
 				<li class="nav-item active">
 					<a class="nav-link" href="/about-us.html">About Us<span class="sr-only">(current)</span></a>
@@ -54,13 +54,13 @@
 				</ol>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img class="d-block w-100" src="./assets/images/slideshow/img_1.jpg" alt="First slide">
+						<img class="d-block w-100 img-fluid" src="./assets/images/slideshow/img_1.jpg" alt="First slide">
 					</div>
 					<div class="carousel-item">
-						<img class="d-block w-100" src="./assets/images/slideshow/img_2.jpg" alt="Second slide">
+						<img class="d-block w-100 img-fluid" src="./assets/images/slideshow/img_2.jpg" alt="Second slide">
 					</div>
 					<div class="carousel-item">
-						<img class="d-block w-100" src="./assets/images/slideshow/img_3.jpg" alt="Third slide">
+						<img class="d-block w-100 img-fluid" src="./assets/images/slideshow/img_3.jpg" alt="Third slide">
 					</div>
 				</div>
 				<a class="carousel-control-prev" href="#main-carousel" role="button" data-slide="prev">
@@ -98,7 +98,7 @@
 								<div class="row">
 									<div class="col-6 projects-carousel__img-col">
 										<div class="img-wrapper">
-											<img class="d-block w-100" src="./assets/images/slideshow/img_1.jpg" alt="First slide">
+											<img class="d-block w-100 img-fluid" src="./assets/images/slideshow/img_1.jpg" alt="First slide">
 										</div>
 									</div>
 									<div class="col-6 projects-carousel__text-col">
@@ -113,7 +113,7 @@
 								<div class="row">
 									<div class="col-6 projects-carousel__img-col">
 										<div class="img-wrapper">
-											<img class="d-block w-100" src="./assets/images/slideshow/img_2.jpg" alt="First slide">
+											<img class="d-block w-100 img-fluid" src="./assets/images/slideshow/img_2.jpg" alt="First slide">
 										</div>
 									</div>
 									<div class="col-6 projects-carousel__text-col">
@@ -128,7 +128,7 @@
 								<div class="row">
 									<div class="col-6 projects-carousel__img-col">
 										<div class="img-wrapper">
-											<img class="d-block w-100" src="./assets/images/slideshow/img_3.jpg" alt="First slide">
+											<img class="d-block w-100 img-fluid" src="./assets/images/slideshow/img_3.jpg" alt="First slide">
 										</div>
 									</div>
 									<div class="col-6 projects-carousel__text-col">
@@ -171,12 +171,14 @@
 			<div class="col-12 p-3 footer__info">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-4 footer__company">
-							<h3>Tristate Air Conditioning</h3>
-							<img src="./assets/images/footer/tristate-logo.svg" alt="logo" height="50" width="150">
+						<div class="col-12 col-sm-4 footer__company d-flex flex-column justify-content-center">
+							<p class="footer__brand-title">
+								Tristate Air Conditioning
+							</p>
+							<img src="./assets/images/footer/tristate-logo.svg" class="mx-auto" alt="logo" height="50" width="150">
 						</div>
-						<div class="col-4 footer__links">
-							<h4 class="mb-4">Sitemap</h4>
+						<div class="col-12 col-sm-4 my-4 text-center footer__links">
+							<h4 class="mb-3">Sitemap</h4>
 							<ul class='footer__list'>
 								<li class="footer__list-item mb-2"><a href="#">About Us</a></li>
 								<li class="footer__list-item mb-2"><a href="#">Services</a></li>
@@ -184,24 +186,23 @@
 								<li class="footer__list-item mb-2"><a href="#">Pricing</a></li>
 							</ul>
 						</div>
-						<div class="col-4 footer__contact">
-							<h4 class='mb-4'>Contact Us</h4>
+						<div class="col-12 col-sm-4 text-center footer__contact">
+							<h4 class='mb-3'>Contact Us</h4>
 							<ul class='footer__list'>
-								<li class='footer__list-item d-flex mb-2'>
-									<img class='mr-3' src="./assets/images/footer/location.svg" alt="location" height='30' width="30">
+								<li class='footer__list-item d-flex justify-content-center mb-2'>
+									<img class='mr-3 footer__location-icon' src="./assets/images/footer/location.svg" alt="location" height='20' width="30">
 									<p>
-										212-11 99th Avenue
-										Queens Village, NY 11429, US
+										212-11 99th Avenue Queens Village,<br />NY 11429, US
 									</p>
 								</li>
-								<li class='footer__list-item d-flex mb-2'>
-									<img class='mr-3' src="./assets/images/footer/phone.svg" alt="phone"  height='30' width="30">
+								<li class='footer__list-item d-flex justify-content-center mb-2'>
+									<img class='mr-3 footer__phone-icon' src="./assets/images/footer/phone.svg" alt="phone"  height='20' width="30">
 									<p>
 										<a href="tel:718-123-1234">718-123-1234</a>
 									</p>
 								</li>
-								<li class='footer__list-item d-flex mb-2'>
-									<img class='mr-3' src="./assets/images/footer/email.svg"  alt="email" height="30" width="30">
+								<li class='footer__list-item d-flex justify-content-center mb-2'>
+									<img class='mr-3 footer__mail-icon' src="./assets/images/footer/email.svg"  alt="email" height="20" width="30">
 									<p>
 										<a href="mailto:test@test.com">testing@tristate.com</a>
 									</p>
@@ -215,7 +216,7 @@
 		
 		<div class="row p-4 footer__copyright fluid-element">
 			<div class="col-12 d-flex justify-content-center">
-				<a href="#">Privacy Policy</a> | &copy;2021 Tristate Air Conditioning
+				&copy;2021 Tristate Air Conditioning
 			</div>
 		</div>
 	</footer>
